@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-    s.name                  = 'MZMapUI'
+    s.name                  = 'HEREMapsUI'
     s.module_name           = 'MSDKUI'
     s.version               = '0.1.0'
     s.summary               = 'HEREMapsUI (MSDKUI) provides ready-to-use UI components for the HERE Mobile SDK for iOS.'
