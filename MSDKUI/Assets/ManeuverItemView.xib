@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ManeuverItemView" customModule="MSDKUI">
+            <connections>
+                <outlet property="addressDistanceStackView" destination="vpq-qZ-Cfq" id="Eze-eD-xQh"/>
+                <outlet property="addressLabel" destination="l2E-UT-cdK" id="gGA-v9-XuP"/>
+                <outlet property="distanceLabel" destination="fNJ-RD-x3D" id="rpU-Cu-9kH"/>
+                <outlet property="iconImageView" destination="Gc2-bl-XPY" id="NVV-li-t87"/>
+                <outlet property="instructionLabel" destination="UcA-Vd-7Yl" id="qKH-6I-Bwd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Z00-fD-rLz">
+            <rect key="frame" x="0.0" y="0.0" width="317" height="99"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="DdS-dH-UpX" userLabel="Canvas View">
+                    <rect key="frame" x="0.0" y="28.5" width="317" height="42.5"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gc2-bl-XPY">
+                            <rect key="frame" x="0.0" y="9" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="TDw-Ej-nDO"/>
+                                <constraint firstAttribute="height" constant="24" id="aDS-9o-gls"/>
+                            </constraints>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="FQl-Vq-WRL" userLabel="Info View">
+                            <rect key="frame" x="36" y="0.0" width="281" height="42.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Instruction" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UcA-Vd-7Yl">
+                                    <rect key="frame" x="0.0" y="0.0" width="281" height="20.5"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" alignment="lastBaseline" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vpq-qZ-Cfq" userLabel="Address + Distance View">
+                                    <rect key="frame" x="0.0" y="24.5" width="281" height="18"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l2E-UT-cdK">
+                                            <rect key="frame" x="0.0" y="0.0" width="56.5" height="18"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="999" verticalHuggingPriority="999" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EyY-kx-rdZ" userLabel="Spacer Label">
+                                            <rect key="frame" x="64.5" y="9" width="148.5" height="10"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="10" id="JND-SV-gOn"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" id="bYD-3s-c17"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNJ-RD-x3D">
+                                            <rect key="frame" x="221" y="0.0" width="60" height="18"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="vpq-qZ-Cfq" firstAttribute="leading" secondItem="FQl-Vq-WRL" secondAttribute="leading" id="ope-mD-lhM"/>
+                                <constraint firstAttribute="trailing" secondItem="vpq-qZ-Cfq" secondAttribute="trailing" id="ozo-bI-WS9"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="DdS-dH-UpX" secondAttribute="bottom" id="2mu-Qa-5Rb"/>
+                <constraint firstAttribute="trailing" secondItem="DdS-dH-UpX" secondAttribute="trailing" id="CY9-gW-eYi"/>
+                <constraint firstItem="DdS-dH-UpX" firstAttribute="centerY" secondItem="Z00-fD-rLz" secondAttribute="centerY" id="Fea-Fe-nMT"/>
+                <constraint firstItem="DdS-dH-UpX" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Z00-fD-rLz" secondAttribute="top" id="djR-sj-Y1m"/>
+                <constraint firstItem="DdS-dH-UpX" firstAttribute="leading" secondItem="Z00-fD-rLz" secondAttribute="leading" id="duT-MW-8XZ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-1668" y="-2061.3193403298351"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,23 @@
+PODS:
+  - HEREMaps (3.18.2)
+  - HEREMapsUI (2.1.8):
+    - HEREMaps (= 3.18.2)
+
+DEPENDENCIES:
+  - HEREMapsUI (from `../../../`)
+
+SPEC REPOS:
+  trunk:
+    - HEREMaps
+
+EXTERNAL SOURCES:
+  HEREMapsUI:
+    :path: "../../../"
+
+SPEC CHECKSUMS:
+  HEREMaps: 2ce8fe190eaf7c3438c381af11650cad7d4879c6
+  HEREMapsUI: 8a89414255b3f6c321c709ab3a51d4de518c11c8
+
+PODFILE CHECKSUM: 58ca175b25126d60fee462abb7fed9e5b71dd2ea
+
+COCOAPODS: 1.10.1
