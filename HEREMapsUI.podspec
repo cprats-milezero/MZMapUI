@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
     s.name                  = 'HEREMapsUI'
     s.module_name           = 'MSDKUI'
-    s.version               = '0.1.2'
+    s.version               = '0.1.3'
     s.summary               = 'HEREMapsUI (MSDKUI) provides ready-to-use UI components for the HERE Mobile SDK for iOS.'
     s.description           = 'HEREMapsUI (MSDKUI) aims to make life easier for the iOS developers using the HERE Mobile SDK for iOS. It provides ready-to-use UI components with strong customization support. Plus, it supports accessibility and localization.'
     s.homepage              = 'https://github.com/abhinav-Milezero/MZMapUI'
-    s.license               = { :type => 'Apache-2.0', :file => '' }
+    s.license               = { :type => 'Apache-2.0', :file => 'License' }
     s.author                = { 'Milezero' => '' }
     s.source                = { :git => 'https://github.com/abhinav-Milezero/MZMapUI.git', :tag => s.version.to_s }
     s.ios.deployment_target = '12.0'
